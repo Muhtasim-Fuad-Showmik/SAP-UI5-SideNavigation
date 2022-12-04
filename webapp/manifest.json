@@ -1,0 +1,123 @@
+{
+    "_version": "1.1.0",
+	
+	"start_url": "<startUrl>",
+	
+    "sap.app": {
+        "_version": "1.1.0",
+        "id": "sap.practise.sidenavigation",
+        "type": "application",
+        "i18n": "<i18nPathRelativeToManifest>",
+        "applicationVersion": {
+            "version": "<version>"
+        },
+        "title": "{{<title>}}",
+        "tags": {
+            "keywords": [
+                "{{<keyword1>}}", "{{<keyword2>}}"
+            ]
+        },
+        "dataSources": {
+            "<dataSourceAlias>": {
+                "uri": "<uri>",
+                "settings": {
+                    "localUri": "<localUri>"
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "_version": "1.1.0",
+        "icons": {
+            "icon": "<icon>",
+            "favIcon": "<favIcon>",
+            "phone": "<phone>",
+            "phone@2": "<phone@2>",
+            "tablet": "<tablet>",
+            "tablet@2": "<tablet@2>"
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_bluecrystal"
+        ]
+    },
+    "sap.ui5": {
+        "_version": "1.1.0",
+        "resources": {
+            "js": [
+                {
+                    "uri": "<uri>"
+                }
+            ],
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "dependencies": {
+            "minUI5Version": "<minUI5Version>",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.tnt": {},
+                "sap.m": {}
+            },
+            "components": {
+                "<ui5component1>": {
+                    "minVersion": "<minComp1Version>"
+                }
+            }
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "<uriRelativeToManifest>"
+            },
+            "": {
+                "dataSource": "<dataSourceAlias>",
+                "settings": {}
+            }
+        },
+        "rootView": {
+            "viewName": "sap.practise.sidenavigation.view.App",
+            "type": "XML",
+            "async": "true"
+        },
+        "handleValidation": false,
+        "config": {
+            "sample": true,
+            "files": [
+                "V.view.xml",
+                "C.controller.js",
+                "css/style.css",
+                "manifest.json"
+            ]
+        },
+        "routing": {
+          
+        },
+        "extends": {
+            "component" : "<extendedComponentId>",
+			"minVersion": "<minComp1Version>",
+			"extensions": {}
+        },
+        "contentDensities": {
+            "compact": false,
+            "cozy": false
+        }
+    },
+
+    "sap.platform.abap": {
+        "_version": "1.1.0",
+        "uri": "<uri>"
+    },
+    "sap.platform.hcp": {
+        "_version": "1.1.0",
+        "uri": "<uri>"
+    }
+}
